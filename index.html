@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Budget Tracker</h1>
+    </header>
+    <div class="container">
+        <div class="balance">
+            <div class="balance-info">
+                <h4>Your Balance:</h4>
+            <hr>
+            <p id="balance" class="balance-amount">R00.00</p>
+            </div> 
+        </div>
+        <div class="income">
+            <div class="income-info">
+                <h4>INCOME</h4>
+            <hr>
+            <p id="income" class="income-amount">R00.00</p>
+            </div>
+        </div>
+        <div class="expences">
+            <div class="expences-info">
+                <h4>EXPENCES</h4>
+            <hr>
+            <p id="expence" class="expences-amount">R00.0</p>
+            </div>
+        </div>
+        <div class="trans-history">
+            <h4 class="h4-history">Transaction History</h4>
+            <div class="history-info">
+            
+            </div>
+        </div>
+        <div class="new-trans">
+            <div class="new-info">
+                <h4 class="h4-new">Add New Transaction</h4>
+                <hr>
+                <form id="form">
+                    <label class="label" for="description">Description:</label>
+                    <input id="text" class="input" type="text" placeholder="Enter description">
+                    <hr>
+                    <label class="label" for="amount">Amount:</label>
+                    <input id="amount" class="input" type="text" placeholder="Enter amount">
+                    <hr>
+                    <div class="add-trans">
+                        <button class="transaction-btn">Add Transaction</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

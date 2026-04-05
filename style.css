@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(245, 100%, 25%);
+    color: white;
+    font-family: Helvetica, sans-serif;
+    padding: 10px 0 10px 0;
+}
+body {
+    background-color: #f4f4f4;
+}
+hr {
+    margin: 10px;
+    color: hsl(0, 0%, 30%);
+}
+h4 {
+   font-size: large;
+   color: hsl(245, 100%, 25%);
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 0.35fr 1fr 1fr;
+    grid-template-areas: 
+    "balance balance"
+    "income expences"
+    "trans-history trans-history"
+    "new-trans new-trans"
+    ;
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    gap: 10px;
+    
+
+}
+/* BALANCE SECTION*/
+.balance {
+    background-color: white;
+    grid-area: balance;
+    border-radius: 5px;
+}
+.balance-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+.balance-amount {
+    color: green;
+    font-size: large;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+}
+/* INCOME SECTION*/
+.income {
+    background-color: white;
+    grid-area: income;
+    border-radius: 5px;
+}
+.income-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 5px;
+}
+.income-amount {
+    color: green;
+    font-size: large;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+}
+/* EXPENSES SECTION*/
+.expences{
+    background-color: white;
+    grid-area: expences;
+    border-radius: 5px;
+}
+.expences-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 5px;
+}
+.expences-amount {
+    color: red;
+    font-size: large;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+}
+/* TRANSACTION HISTORY SECTION*/
+.trans-history {
+    background-color: white;
+    grid-area: trans-history;
+    border-radius: 5px;
+}
+.h4-history {
+    margin-top: 5px;
+    text-align: center;
+}
+.history-p {
+    font-weight: bold;
+}
+.green-p {
+    color: green;
+    font-weight: bold;
+}
+.red-p {
+    color: red;
+    font-weight: bold;
+}
+.transAndAmount {
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+}
+.btn-container {
+    display: flex;
+    justify-content: end;
+}
+.delete-btn {
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 5px 20px;
+    color: white;
+    background-color: hsl(0, 0%, 30%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delete-btn:hover {
+    opacity: 0.5;
+}
+/* NEW HISTORY SECTION*/
+.new-trans {
+    background-color: white;
+    grid-area: new-trans;
+    border-radius: 5px;
+}
+.h4-new {
+    text-align: center;
+    margin-top: 5px;
+}
+.label {
+    font-weight: bold;
+    margin-left: 10px;
+}
+.input {
+    padding: 5px 20px;
+    width: 70%;
+}
+.add-trans {
+    display: flex;
+    justify-content: center;
+}
+.transaction-btn {
+    background-color: hsl(245, 100%, 25%);
+    color: white;
+    padding: 10px 60px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.transaction-btn:hover {
+    opacity: 0.5;
+}
